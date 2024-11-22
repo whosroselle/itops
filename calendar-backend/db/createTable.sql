@@ -1,0 +1,11 @@
+-- createTable.sql
+CREATE DATABASE IF NOT EXISTS calendarDB;
+
+USE calendarDB;
+
+CREATE TABLE IF NOT EXISTS entries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    time VARCHAR(20) NOT NULL,
+    entry TEXT NOT NULL
+);
